@@ -1,0 +1,13 @@
+# コンパイルで生成されるファイル（javacで作り直せるので記録しない）
+*.class
+
+# Mavenのビルド成果物（この先で使う）
+target/
+
+# 秘密情報を書くファイル（絶対にコミットしない）
+.env
+application-local.yml
+
+# OSが勝手に作るファイル
+Thumbs.db
+.DS_Store
