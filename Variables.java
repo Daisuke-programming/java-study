@@ -33,5 +33,16 @@ public class Variables {
     double c= 5;
     double d= 2;
     System.out.println(c / d);
+
+    // 演習C：割り算の型
+    int totalPrice = 1000;
+    int personCount = 3;
+    int perPerson = totalPrice / personCount;
+    System.out.println("1人あたり(int):" + perPerson + "円");
+
+    double totalPriceD = 1000;
+    double personCountD = 3;
+    double perPersonD = totalPriceD / personCountD;
+    System.out.println("1人あたり(double):" + perPersonD + "円");
   }
 }
