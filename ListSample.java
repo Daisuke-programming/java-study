@@ -74,8 +74,8 @@ public class ListSample {
     fruits.add("ぶどう");
     fruits.add("もも");
 
-    for (String fruit : fruits) {
-      System.out.println("1. " + fruit);
+    for (int i = 0; i < fruits.size(); i++) {
+      System.out.println(i+1 + ". " + fruits.get(i));
     }
 
      if (fruits.contains("みかん")) {
