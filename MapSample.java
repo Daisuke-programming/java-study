@@ -78,37 +78,38 @@ public class MapSample {
     // System.out.println(code2.length());
 
     // 演習４
-    System.out.println("演習４");
-    // 1. 3件登録する
-    Map<String, String> fruits = new LinkedHashMap<>();
-    fruits.put("A001", "りんご");
-    fruits.put("A002", "みかん");
-    fruits.put("A003", "ぶどう");
+System.out.println("演習４");
 
-    // 2. 全件を「コード: 商品名」で表示する
-    for (Map.Entry<String, String> entry : fruits.entrySet()) {
-      System.out.println(entry.getKey() + ": " + entry.getValue() + "件");
-    }
+// 1. 3件登録する
+Map<String, String> fruits = new LinkedHashMap<>();
+fruits.put("A001", "りんご");
+fruits.put("A002", "みかん");
+fruits.put("A003", "ぶどう");
 
-    // 3. A002 の商品名を表示する
-    System.out.println("商品名: " + fruits.get("A002"));
+// 2. 全件を「コード: 商品名」で表示する
+for (Map.Entry<String, String> entry : fruits.entrySet()) {
+    System.out.println(entry.getKey() + ": " + entry.getValue());
+}
 
-    // 4. A999 が登録されているか判定する
-    if (fruits.isEmpty()) {
-      System.out.println("該当データはありません");
-    } else {
-      System.out.println("商品名: " + fruits.get("A999"));
-    }
+// 3. A002 の商品名を表示する
+System.out.println("商品名: " + fruits.get("A002"));
 
-    // 5. 登録件数を表示する
-    System.out.println("登録件数: " + fruits.size());
+// 4. A999 が登録されているか判定する
+if (fruits.containsKey("A999")) {
+    System.out.println("商品はあります");
+} else {
+    System.out.println("商品はありません");
+}
 
-    // 演習A 全件表示
+// 5. 登録件数を表示する
+System.out.println("登録件数: " + fruits.size());
+
+    // 全件表示
     for (Map.Entry<String, String> entry : fruits.entrySet()) {
       System.out.println(entry.getKey() + " → " + entry.getValue());
     }
 
-    // 演習B 
+    // 指定の商品が有無
     if (fruits.containsKey("A999")) {
       System.out.println("商品はあります");
     } else {
